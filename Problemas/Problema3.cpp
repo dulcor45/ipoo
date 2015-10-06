@@ -4,26 +4,29 @@ using namespace std;
 
 int main()
 {
-	int x=1;
+	int x=0;
 	int con=0;
 
-	while (con<=10)
+	while (con!=20)
 	{
-		for (int i = 0; i <= 10; ++i)
+		con=0;
+		x+=20;
+		for (int i = 1; i <= 20; i++)
 		{
-			if (x%i!=0)
-			{
-				con=0;
-				x+=1;
-				break;
-			}
-			else
+			if (x%i==0)
 			{
 				con+=1;
 			}
+
+			else 
+			{
+				break;
+			}
+		
 		}
 	}
-	cout << x << endl;
+
+	cout << "La respuesta es " << x << endl;
 
 	return 0;
 }
