@@ -8,12 +8,14 @@ using namespace std;
 
 Vector::Vector(){}
 
-Vector::Vector(double X1, double Y1, double X2, double Y2){
-	
+Vector::Vector(double X1, double Y1, double X2, double Y2)
+	: Start(X1, Y1), End(X2, Y2)
+{
+/*	
 	Punto _Start(X1, Y1), _End(X2, Y2);	
 	Start = _Start;
 	End = _End;
-
+*/
 }
 
 double Vector::Distance(){

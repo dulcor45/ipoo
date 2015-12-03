@@ -9,12 +9,11 @@ protected:
 	int year;
 
 public:
-	Vehicle(const string myLicense, const int myYear)
-		: license(myLicense), year(myYear) {}
+	Vehicle(const string myLicense, const int myYear);
+	
+	virtual const string getDesc() = 0;
 
-	string getDesc();
+	virtual string getLicense() = 0;
 
-	string getLicense();
-
-	int getYear();
+	virtual int getYear() = 0;
 };

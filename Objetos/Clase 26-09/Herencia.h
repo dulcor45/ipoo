@@ -14,7 +14,13 @@ public:
 	Car( const string myLicense , const int myYear , const string myStyle )
  	: Vehicle ( myLicense , myYear ), style ( myStyle ) {}
 
+ 	const string getDesc();
+
  	string getStyle();
+
+ 	string getLicense();
+
+ 	int getYear();
 };
 
 
@@ -26,5 +32,11 @@ public:
 	Truck( const string myLicense , const int myYear , const int myPeso)
  	: Vehicle ( myLicense , myYear ), Peso ( myPeso ) {}
 
+ 	const string getDesc();
+
  	int getPeso();
+
+ 	string getLicense();
+
+ 	int getYear();
 };

@@ -5,21 +5,7 @@
 
 using namespace std;
 
-string  Vehicle::getDesc()
-{
-	string s;
-   	stringstream out;
-  	out << year;
-    s = out.str();
-	return license + " from " + s;
-}
+Vehicle::Vehicle(const string myLicense, const int myYear)
+	: license(myLicense), year(myYear) {}
 
-string Vehicle::getLicense()
-{
-	return license;
-}
 
-int Vehicle::getYear()
-{
-	return year;
-}

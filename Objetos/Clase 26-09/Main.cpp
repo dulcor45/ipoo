@@ -8,13 +8,6 @@ using namespace std;
 
 int main()
 {
-	Vehicle V1("ABC 123", 2015);
-
-	cout << V1.getDesc() << endl;
-	cout << V1.getLicense() << endl;
-	cout << V1.getYear() << endl;
-	cout << endl;
-
 	Car C1("DEF 456", 2014, "RED");
 
 	cout << C1.getDesc() << endl;
