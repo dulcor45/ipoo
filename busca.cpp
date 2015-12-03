@@ -57,15 +57,20 @@ char int_to_char(int caracter){
     return a;
 }
 
-int** crearMatriz(int f, int c){
+int** crearMatriz(int f, int c)
+{
     srand (time(NULL));
     int** m = new int*[f];
-    int w = (f*c)/6;
-    for(int i=0; i<f;i++){
+    int w = (f*c)/1.5;
+    for(int i=0; i<f;i++)
+    {
         (*(m+i)) = new int[c];
     }
-    for(int i=0; i<f; i++){
-        for (int j=0; j<c; j++){
+    
+    for(int i=0; i<f; i++)
+    {
+        for (int j=0; j<c; j++)
+        {
             *((*(m+i))+j) = 0;
         }
     }

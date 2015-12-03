@@ -1,8 +1,7 @@
 
-int cuadrado(int x);
+void cuadrado(int *x);
 
-
-int cubo(int x);
+void cubo(int *x);
 
 int fibo(int x);
 

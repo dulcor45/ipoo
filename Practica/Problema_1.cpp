@@ -25,12 +25,12 @@ int** crearMatriz(int f, int c){
 void ImprimirMatriz(int** z, int f, int c)
 {
 
- 	for (int y=0; y<f; y++)
+ 	for (int i=0; i<f; i++)
  	{
  		cout << "          | ";
-    	for (int x=0; x<c; x++)
+    	for (int j=0; j<c; j++)
      	{
-        	cout<< *((*(z+y))+x);
+        	cout<< *((*(z+i))+j);
      		cout<< " ";
      	}
     

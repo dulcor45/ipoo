@@ -26,3 +26,19 @@ int main (){
 
     return 0;
 }
+
+
+
+
+
+
+    //int numero [9];
+    //int *p;
+
+    //for (int i=0; i<10; i++){
+      //  p = &numero[i];
+
+        //numero[i] = i+1;
+
+        //cout << *p << "\n";
+        //}

@@ -3,22 +3,22 @@
 
 using namespace std;
 
-bool pal(string x){
+bool pal(string* caca){
 
 	int y=0;
 	int z=0;
 
-	z=x.size()-1;
+	z=caca->size()-1;
 
-	if (x.size()%2==1){
-		y=(x.size()/2)+1;
+	if (caca->size()%2==1){
+		y=(caca->size()/2)+1;
 	}
 	else{
-		y=x.size()/2;
+		y=caca->size()/2;
 	}
 	
 	for (int i=0; i<=y; i++){
-		if (x[i]==x[z]){
+		if (*(caca+i)==*(caca+z)){
 			z-=1;
 		}
 		else {
@@ -34,9 +34,16 @@ int main(){
 	
 	string x;
 
+
+
 	cout << "Palabra: "; cin >> x;
 
-	if (pal (x)){
+	string* caca;
+
+	caca=&x;
+
+
+	if (pal (caca)){
 		cout << "Es palindromo" << endl;
 	}
 
@@ -46,3 +53,6 @@ int main(){
 
 	return 0;
 }
+
+atoi
+ctoi
