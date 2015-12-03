@@ -23,27 +23,37 @@ int main() {
 	cout << "Pruebas Lista: " << endl;
 	
 	cout << "lista1 esta vacia? " << lista1.empty() << endl;
-	cout << lista1.size() << endl;
+	cout << "Su tamano es: " << lista1.size() << endl;
 	lista1.push_front(4);
 	lista1.push_back(5);
+	cout << "Ahora la pila1 es: " << endl;
+	lista1.print();
+
+	cout << "La pila2 es: " << endl;
+	lista2.print();
 
 	cout << "La lista1+2 es: " << endl;
 	lista1 = lista1 + lista2;
+	lista1.print();
 
 	lista1.pop_back();
 	lista1.pop_front();
 	lista1.insert(5,66);
 	lista1.erase(3);
+
+	cout << "Despues la lista1 es: " << endl;
 	lista1.print();
+
+	cout << "La lista3 es: " << endl;
 	lista3.print();
 
-	cout << "La pila1-3 es: " << endl;
+	cout << "La lista1-3 es: " << endl;
 	lista1 = lista1 - lista3;
 	lista1.print();
 	
 	cout << endl << endl;
 	//Pila
-	
+	/*
 	Pila<int> pila1, pila2, pila3;
 	
 	cout << "Pruebas Pila: " << endl;
@@ -111,6 +121,6 @@ int main() {
 	cola1.print();
 	
 	//cola1 = cola1 - cola3;
-	//cola1.print();
+	//cola1.print();*/
 	return 0;
 }
