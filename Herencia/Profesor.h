@@ -1,4 +1,4 @@
-
+ 
 #ifndef PROFESOR_H
 #define PROFESOR_H
 
@@ -13,6 +13,7 @@ public:
 	Profesor(std::string Nombre, int Codigo, int Paga, std::string Curso);
 	void Ensenar();
 	void Mostrar_datos();
+	void GetCurso();
 }; 
 
 #endif //PROFESOR_H

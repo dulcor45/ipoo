@@ -1,4 +1,4 @@
-
+ 
 #include "Azulito.h"
 
 Azulito::Azulito(std::string Nombre, int Codigo, int Paga, std::string Zona)

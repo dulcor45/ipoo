@@ -1,10 +1,10 @@
-
+ 
 #include "Profesor.h"
 #include "Azulito.h"
 
 int main()
 {
-	Profesor Prof1("Matias", 15772430, 1200, "Algebra");
+	Profesor Prof1("Alvaro", 15772430, 5200, "ALEGRE");
 	
 	Prof1.Mostrar_datos();
 	Prof1.Ensenar();

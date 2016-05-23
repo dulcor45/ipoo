@@ -1,4 +1,4 @@
-
+ 
 #ifndef EMPLEADO_H
 #define EMPLEADO_H
 
@@ -12,7 +12,7 @@ private:
 	int m_Paga;
 public:
 	Empleado(std::string Nombre, int Codigo, int Paga);
-	void Mostrar_datos();
+	virtual void Mostrar_datos();
 };
 
 #endif
